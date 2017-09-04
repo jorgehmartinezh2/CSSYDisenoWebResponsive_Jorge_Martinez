@@ -1,6 +1,18 @@
 body{
   background-color: #02010a;
   font-family: "Dancing Script";
+  animation: slidein 2s;
+}
+@-webkit-keyframes slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 header{
     background-color: #5b7989;
@@ -46,13 +58,15 @@ header h1 {
   width: 80%;
 }
 .container{
-  background-color: #d5c75f;
+    background-color: #d5c75f;
     margin-left: 40px;
     margin-right: 40px;
 }
 .imgSecundarias{
     text-align: center;
-    display: flex;
+    display: -webkit-flex;
+	  display: flex;
+    -webkit-flex-flow: row;
     flex-direction: row;
     padding:50px 0 40px 0;
 }
@@ -62,4 +76,51 @@ header h1 {
 }
 .col1, .col2{
     width: 100%;
+}
+@media screen and (max-width: 450px){
+  .imgSecundarias{
+    flex-direction: column;
+  }
+  header{
+    height: 120px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  header h1{
+    font-size: 20px;
+  }
+  p a{
+    text-decoration: underline;
+    color: black;
+  }
+  #menu-principal li{
+      display: inline-block;
+      margin: 0;
+      font-size: 12px;
+      padding: 10px;
+  }
+  #principal{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .container{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.c1{
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+.c1:hover{
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+.c2{
+	transition-property: margin-left;
+	transition-duration: 1s;
+}
+.c2:hover{
+	margin-left: 30px;
 }
