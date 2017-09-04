@@ -1,5 +1,6 @@
 body{
   background-color: #02010a;
+  font-family: "Dancing Script";
 }
 header{
     background-color: #5b7989;
@@ -39,9 +40,26 @@ header h1 {
   margin-right: 40px;
   background-color:  #82c3a6;
   padding: 20px;
+    text-align: center;
 }
 #principal img{
   width: 80%;
-  display:block;
-  margin:auto;
+}
+.container{
+  background-color: #d5c75f;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.imgSecundarias{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding:50px 0 40px 0;
+}
+.c1, .c2{
+    height: 80%;
+    width: 80%;
+}
+.col1, .col2{
+    width: 100%;
 }
