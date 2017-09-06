@@ -52,7 +52,7 @@ header h1 {
   margin-right: 40px;
   background-color:  #82c3a6;
   padding: 20px;
-    text-align: center;
+  text-align: center;
 }
 #principal img{
   width: 80%;
@@ -61,11 +61,20 @@ header h1 {
     background-color: #d5c75f;
     margin-left: 40px;
     margin-right: 40px;
+	margin-bottom: 0px;
 }
 .imgSecundarias{
     text-align: center;
     display: -webkit-flex;
 	  display: flex;
+    -webkit-flex-flow: row;
+    flex-direction: row;
+    padding:50px 0 40px 0;
+}
+.contenidoFooter{
+    text-align: center;
+    display: -webkit-flex;
+	display: flex;
     -webkit-flex-flow: row;
     flex-direction: row;
     padding:50px 0 40px 0;
@@ -107,6 +116,7 @@ header h1 {
   .container{
     margin-left: 0px;
     margin-right: 0px;
+	margin-bottom: 0px;
   }
 }
 .c1{
@@ -123,4 +133,37 @@ header h1 {
 }
 .c2:hover{
 	margin-left: 30px;
+}
+footer{
+	background-color: #C6d5c5;
+	margin-top: 0px;
+	margin-left: 40px;
+	margin-right: 40px;
+	border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.col_footer1, .col_footer2, .col_footer3, .col_footer4{
+	padding: 2%;
+	width: 21%;
+	text-align: left;
+}
+.col_footer3 li{
+    display: inline-block;
+}
+@media screen and (max-width: 450px)
+{
+  .contenidoFooter{
+    flex-direction: column;
+  }
+  
+  footer{
+	margin-left: 0;
+	margin-right: 0;
+  }
+  
+  .col_footer1, .col_footer2, .col_footer3, .col_footer4{
+	margin-left: 50px;
+	width: 100%;
+	text-align: left;
+	}
 }
