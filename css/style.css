@@ -155,15 +155,26 @@ footer{
   .contenidoFooter{
     flex-direction: column;
   }
-  
+
   footer{
 	margin-left: 0;
 	margin-right: 0;
   }
-  
+
   .col_footer1, .col_footer2, .col_footer3, .col_footer4{
 	margin-left: 50px;
 	width: 100%;
 	text-align: left;
 	}
+}
+.imgPaisajes{
+    text-align: center;
+    display: -webkit-flex;
+	  display: flex;
+    -webkit-flex-flow: row;
+    flex-direction: row wrap;
+}
+.imgPaisajes img{
+  padding: 20px;
+
 }
