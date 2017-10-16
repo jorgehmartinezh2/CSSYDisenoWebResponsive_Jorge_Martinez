@@ -172,9 +172,9 @@ footer{
     display: -webkit-flex;
 	  display: flex;
     -webkit-flex-flow: row;
-    flex-direction: row wrap;
+    flex-flow: wrap;
 }
 .imgPaisajes img{
-  padding: 20px;
-
+  padding: 5px;
+  width: 380px;
 }
