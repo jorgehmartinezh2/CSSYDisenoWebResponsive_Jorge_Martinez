@@ -178,3 +178,21 @@ footer{
   padding: 5px;
   width: 380px;
 }
+.pai1 {
+   filter: blur(10px);
+}
+.imgPaisajes :nth-child(even)
+{
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.pai3{
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+  -ms-filter: sepia(90%);
+  -o-filter: sepia(90%);
+  filter: sepia(90%);
+}
